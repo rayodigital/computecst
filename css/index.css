@@ -1,6 +1,7 @@
 :root {
       --white: #FFFFFF;
       --amarillo: #FFBF00;
+      --amarillo-menu: #ffce10;
       --azul: #0d2342;
       --gris: #a8acb5;
 }
@@ -58,9 +59,11 @@ header #contact .icons {
 header #menu {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	gap: 20px;
 	font-size: 17px;
-	padding: 20px;
+	font-weight: 700;
+	padding: 10px;
 	background: var(--white);
 	color: var(--azul);
 	/*border: solid green;*/
@@ -72,6 +75,16 @@ header #menu .opMenu {
 
 header #menu .opMenu:hover {
 	color: #ffce10;
+}
+
+header #menu .opMenu:nth-child(6) {
+	background-color: var(--amarillo-menu);
+	border: 2px solid var(--amarillo-menu);
+	padding: 18px 25px;
+}
+
+header #menu .opMenu:nth-child(6):hover {
+	background-color: var(--blanco);
 }
 
 header #menu .opMenu a {
