@@ -1,0 +1,151 @@
+:root {
+      --white: #FFFFFF;
+      --amarillo: #FFBF00;
+      --azul: #0d2342;
+      --gris: #a8acb5;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	/*border: 2px solid red;*/
+}
+
+
+main {
+	/*border: 2px solid blue;*/
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin-bottom: 109px;
+	/*border: 2px solid purple;*/
+}
+
+header #contact {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	background: var(--azul);
+	color: var(--white);
+	padding: 5px;
+	/*border: 2px solid orange;*/
+}
+
+header #contact .info {
+	display: flex;
+	justify-content: flex-start;
+	gap: 20px;
+	padding: 2px 10px;
+	/*border: 2px solid pink;*/
+}
+
+header #contact img {
+	width: 20px;
+	vertical-align: text-bottom;
+}
+
+header #contact .icons {
+	/*border: 2px solid #82E0AA;*/
+}
+
+header #menu {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	font-size: 17px;
+	padding: 20px;
+	background: var(--white);
+	color: var(--azul);
+	/*border: solid green;*/
+}
+
+header #menu .opMenu {
+	cursor: pointer;
+}
+
+header #menu .opMenu:hover {
+	color: #ffce10;
+}
+
+header #menu .opMenu a {
+	 text-decoration: none;
+	 color: black;
+}
+
+/*a:link, a:visited {
+  text-decoration: none;
+}*/
+
+section {
+	margin-top: 100px;
+	border: 2px solid red;
+}
+
+section #slider {
+	border: 2px solid blue;
+}
+
+section #slider img {
+	width: 100%;
+}
+
+
+section #services {
+	text-align: center;
+	border: 2px solid red;
+}
+
+section #services h1 {
+	font-size: 50px;
+	color: var(--azul);
+	padding: 60px 20px;
+}
+
+section #services .ourServices {
+	/*display: flex;
+	justify-content: center;
+    gap: 10%;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+	/*border: 2px solid blue;*/
+}
+
+section #services .ourServices .itemService {
+	text-align: center;
+	padding: 20px 5px;
+	/*border: 2px solid green;*/
+}
+
+section #services .ourServices .itemService:hover {
+	box-shadow: 0 0 30px 0 rgba(15, 92, 250, 0.08);
+}
+
+section #services .ourServices .itemService img {
+	width: 70px;
+	border: 2px solid var(--amarillo);
+	border-radius: 30px;
+}
+
+section #services .ourServices .itemService h2 {
+	font-size: 20px;
+	color: var(--azul);
+	padding: 20px 5px;
+}
+
+section #services .ourServices .itemService p,ul {
+	color: var(--gris);
+	font-size: 15px;
+}
+
+section #services .ourServices .itemService ul {
+	list-style: none;
+}
+
