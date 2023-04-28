@@ -19,6 +19,7 @@ $(document).ready(function()
     $("#menu2-icon").on( "click", function() {
         $("#menu2").toggleClass("display_block");
         $("#slider").toggleClass("display_none");
+        $("#menu2-icon").toggleClass("margin_top_0");
     } );
 });
 

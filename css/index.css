@@ -29,6 +29,10 @@ a {
 	display: none;
 }
 
+.margin_top_0 {
+	margin-top: 0 !important;
+}
+
 
 body {
 	/*border: 2px solid red;*/
