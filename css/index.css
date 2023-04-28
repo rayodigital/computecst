@@ -12,6 +12,10 @@
 	box-sizing: border-box;
 }
 
+a {
+	text-decoration: none;
+}
+
 body {
 	/*border: 2px solid red;*/
 }
@@ -35,7 +39,7 @@ header #contact {
 	grid-template-columns: 3fr 1fr;
 	background: var(--azul);
 	color: var(--white);
-	padding: 5px;
+	padding: 7px 5px;
 	/*border: 2px solid orange;*/
 }
 
@@ -45,6 +49,10 @@ header #contact .info {
 	gap: 20px;
 	padding: 2px 10px;
 	/*border: 2px solid pink;*/
+}
+
+header #contact .info a {
+	color: var(--blanco);
 }
 
 header #contact img {
@@ -110,12 +118,13 @@ section #slider img {
 }
 
 
+
 section #services {
 	text-align: center;
 	border: 2px solid red;
 }
 
-section #services h1 {
+section h1 {
 	font-size: 50px;
 	color: var(--azul);
 	padding: 60px 20px;
@@ -162,3 +171,20 @@ section #services .ourServices .itemService ul {
 	list-style: none;
 }
 
+
+
+section #ourTeam {
+	text-align: center;
+	border: 2px solid red;
+}
+
+section #ourTeam .Team {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	border: 2px solid blue;
+}
+
+section #ourTeam .Team .member {
+	border: 2px solid orange;
+}
