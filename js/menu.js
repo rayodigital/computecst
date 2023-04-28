@@ -9,20 +9,16 @@ function mymenu() {
 
 $(document).ready(function()
 {
-    //$('.bxslider').bxSlider();
-
-    //
     $('.bxslider').bxSlider({
         auto: true,
         autoControls: true,
         pause: 3000,
         slideMargin: 20
         });
-    //
-
 
     $("#menu2-icon").on( "click", function() {
         $("#menu2").toggleClass("display_block");
+        $("#slider").toggleClass("display_none");
     } );
 });
 

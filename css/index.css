@@ -256,7 +256,7 @@ section #ourTeam .Team .member {
 
 
 	#menu2-icon {
-		z-index: 1;
+		z-index: 1000;
 		display: block;
 		position: absolute;
 		top: 15px;
