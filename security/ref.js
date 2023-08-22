@@ -14,6 +14,7 @@ function search()
 	let url = document.getElementById('url').value;
 	
 	document.body.innerHTML += "<p><a target='_blank' href='https://dnschecker.org/?camp_opt=exact_match#A/" + url + "'> https://dnschecker.org/?camp_opt=exact_match#A/" + url + " </a></p>"
+	document.body.innerHTML += "<p><a target='_blank' href='https://dnschecker.org/?camp_opt=exact_match#A/" + url + "'> https://dnschecker.org/?camp_opt=exact_match#A/" + url + " </a></p>"
 	document.body.innerHTML = "<p><a target='_blank' href='https://www.whois.com/whois/" + url + "'> https://www.whois.com/whois/" + url + " </a></p>"
 	document.body.innerHTML += "<p><a target='_blank' href='https://sitereview.bluecoat.com/#/lookup-result/" + url + "'> https://sitereview.bluecoat.com/#/lookup-result/" + url + " </a></p>"
 	document.body.innerHTML += "<p><a target='_blank' href='https://www.virustotal.com/gui/domain/" + url + "'> https://www.virustotal.com/gui/domain/" + url + " </a></p>"
