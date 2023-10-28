@@ -83,7 +83,7 @@ header #contact .info {
 	/*border: 2px solid pink;*/
 }
 
-header #contact .info a {
+header #contact a {
 	color: var(--blanco);
 }
 
@@ -121,6 +121,8 @@ nav #navbarSupportedContent ul li a:hover {
 
 
 
+
+
 @media screen and (max-width: 900px)
 {
 	body {
@@ -138,4 +140,12 @@ nav #navbarSupportedContent ul li a:hover {
 	header #contact .info p:nth-child(3) {
 		display: none;
 	}
+}
+
+
+@media screen and (max-width: 800px)
+{
+
+	row row-cols-2 row-cols-md-2 g-4
+
 }

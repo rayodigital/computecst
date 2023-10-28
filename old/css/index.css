@@ -223,12 +223,19 @@ section #ourTeam .Team .member {
 	/*border:2px solid green;*/
 }
 
-	#menu2-icon img {
-		cursor: pointer;
-		with:30px;
-		height: 30px;
-		/*border: 2px solid yellow;*/
-	}
+#menu2-icon img {
+	cursor: pointer;
+	with:30px;
+	height: 30px;
+	/*border: 2px solid yellow;*/
+}
+
+
+
+
+/*footer {
+	border: 2px solid red;
+}*/
 
 
 
