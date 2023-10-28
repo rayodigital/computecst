@@ -24,6 +24,7 @@ function search_url()
 	document.body.innerHTML += "<p><a target='_blank' href='https://talosintelligence.com/reputation_center/lookup?search=" + url + "'> https://talosintelligence.com/reputation_center/lookup?search=" + url + " </a></p>"
 	document.body.innerHTML += "<p><a target='_blank' href='https://securitytrails.com/domain/" + url + "/dns'> https://securitytrails.com/domain/" + url + "/dns </a></p>"
 	document.body.innerHTML += "<p><a target='_blank' href='https://www.ipqualityscore.com/threat-feeds/malicious-url-scanner/https%3A%2F%2F" + url + "'> https://www.ipqualityscore.com/threat-feeds/malicious-url-scanner/https%3A%2F%2F" + url + " </a></p>"
+	document.body.innerHTML += "<p><a target='_blank' href='https://www.shodan.io/search?query=" + url + "'> https://www.shodan.io/search?query=" + url + " </a></p>"
 }
 
 
@@ -43,6 +44,7 @@ function search_ip()
 	document.body.innerHTML += "<p><a target='_blank' href='https://www.ipqualityscore.com/free-ip-lookup-proxy-vpn-test/lookup/" + ip + "'> https://www.ipqualityscore.com/free-ip-lookup-proxy-vpn-test/lookup/" + ip + " </a></p>"
 	document.body.innerHTML += "<p><a target='_blank' href='https://talosintelligence.com/reputation_center/lookup?search=" + ip + "'> https://talosintelligence.com/reputation_center/lookup?search=" + ip + " </a></p>"
 	document.body.innerHTML += "<p><a target='_blank' href='https://securitytrails.com/list/ip/" + ip + "'> https://securitytrails.com/list/ip/" + ip + " </a></p>"
+	document.body.innerHTML += "<p><a target='_blank' href='https://www.shodan.io/host/" + ip + "'> https://www.shodan.io/host/" + ip + " </a></p>"
 }
 
 
