@@ -24,7 +24,7 @@ function search_url()
 	document.body.innerHTML += "<p><a target='_blank' href='https://www.ipqualityscore.com/threat-feeds/malicious-url-scanner/https%3A%2F%2F" + url + "'> https://www.ipqualityscore.com/threat-feeds/malicious-url-scanner/https%3A%2F%2F" + url + " </a></p>"
 	document.body.innerHTML += "<p><a target='_blank' href='https://threatyeti.com/search?q=" + url + "'> https://threatyeti.com/search?q=" + url + " </a></p>"
 	document.body.innerHTML += "<p><a target='_blank' href='https://cyber-xray.com/#/anonymous-admin/dashboard/" + url + "'> https://cyber-xray.com/#/anonymous-admin/dashboard/" + url + " </a></p>"
-	document.body.innerHTML += "<p><a target='_blank' https://pulsedive.com/indicator/" + url + "'> https://pulsedive.com/indicator/" + url + " </a></p>"
+	document.body.innerHTML += "<p><a target='_blank' href='https://pulsedive.com/indicator/" + url + "'> https://pulsedive.com/indicator/" + url + " </a></p>"
 	document.body.innerHTML += "<p><a target='_blank' href='https://www.shodan.io/search?query=" + url + "'> https://www.shodan.io/search?query=" + url + " </a></p>"
 	document.body.innerHTML += "<p><a target='_blank' href='https://www.criminalip.io/asset/search?query=" + url + "'> https://www.criminalip.io/asset/search?query=" + url + " </a></p>"
 	document.body.innerHTML += "<p><a target='_blank' href='https://www.criminalip.io/domain/search?query=" + url + "&scan=full'> https://www.criminalip.io/domain/search?query=" + url + "&scan=full </a></p>"
