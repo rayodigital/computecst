@@ -1,0 +1,41 @@
+* {
+	margin:0;
+	box-sizing: border-box;
+}
+
+main{
+	padding: 20px;
+	/*border: 2px solid red;*/
+}
+
+main section {
+	/*2px solid blue;*/
+}
+
+main section .course_img{
+	/*border:2px solid red;*/
+}
+
+main section .course_img .content_img{
+	text-align: center;
+	/*border:2px solid oragne;*/
+}
+
+main section .course_img .content_img img{
+	/*border:2px solid yellow;*/
+}
+
+main section .box {
+	margin: 20px 0;
+	/*border: 2px solid purple;*/
+}
+
+main section .box ._title1{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+main section .box ._title2{
+	font-size: 16px;
+	font-weight: bold;
+}
