@@ -1401,7 +1401,7 @@ ul.img_icon li {
 
             /* Muestra el menú al pasar el puntero sobre el elemento */
 .nav-item.dropdown:hover .dropdown-menu {
-     display: block;
+     display: block;git
      margin-top: 0; /* Ajusta el margen si es necesario */
  }
  
