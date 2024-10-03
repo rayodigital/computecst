@@ -37,6 +37,31 @@
 
       <header>
 
+         <div class="header_to d_none">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                     <ul class="lan conta_icon">
+                        <li><a href="tel://+522491283853"><i class="fa fa-phone" aria-hidden="true"></i>Contáctanos : (+52) 249 128 3853</a> </li>
+                        <li> <a href="mailto:hola.computecst@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>hola.computecst@gmail.com</a></li>
+                     </ul>
+                    
+                  </div>
+                  <div class="col-md-6 col-sm-6 ">
+                     <ul class="social_icon1">
+                        <li> Síguenos
+                        </li>
+                        <li> <a href="https://www.facebook.com/profile.php?id=100090001100835" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>
+                           </a>
+                        </li>
+                        <li> <a href="https://www.instagram.com/computec_st/?igsh=MWF5N2d2cnNtMHJmeg%3D%3D" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
          <div class="header">
             <div class="header_bo">
                <div class="container">
@@ -59,21 +84,18 @@
                                        Servicios
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-                                       <a class="dropdown-item" href="#service1">Soporte Técnico</a>
-                                       <a class="dropdown-item" href="#service2">Desarrollo de Software</a>
-                                       <a class="dropdown-item" href="#service3">Crusos</a>
-                                       <a class="dropdown-item" href="#service4">Redes</a>
-                                       <a class="dropdown-item" href="#service5">Crusos</a>
-                                       <a class="dropdown-item" href="#service3">Análisis de Vulnerabilidades</a>
-                                       <a class="dropdown-item" href="#service3">Testing de Software</a>
-                                       <a class="dropdown-item" href="#service3">Instalación de Cámaras de Seguridad</a> 
+                                       <a class="dropdown-item" href="soporte.html">Soporte Técnico</a>
+                                       <a class="dropdown-item" href="desarrollo.html">Desarrollo de Software</a>                                       
+                                       <a class="dropdown-item" href="analisisv.html">Análisis de Vulnerabilidades</a>
+                                       <a class="dropdown-item" href="testing.html">Testing de Software</a>
+                                       <a class="dropdown-item" href="camarasseguridad.html">Cámaras de Seguridad</a> 
                                     </div>
                                  </li>
                                  <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="servicios.html" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle active" href="servicios.html" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                        Cursos
                                     </a>
-                                    <div class="dropdown-menu active aria-labelledby="servicesDropdown">
+                                    <div class="dropdown-menu class" aria-labelledby="servicesDropdown">
                                        <a class="dropdown-item" href="computo1.html">Iniciación a Cómputo I</a>
                                        <a class="dropdown-item" href="computo2.html">Iniciación a Cómputo II</a>
                                        <a class="dropdown-item" href="redes.html">Redes</a>                                    
@@ -250,6 +272,13 @@
             </div>
          </div>
       </div>
+      <div id="cookie-consent">
+         <p>Este sitio utiliza cookies para mejorar su experiencia. Al continuar navegando, acepta nuestra Política de Privacidad y el uso de cookies.</p>
+         <div>
+             <button id="accept-cookies">Aceptar</button>
+             <button id="decline-cookies">Denegar</button>
+         </div>
+     </div>
       <footer>
          <div class="footer">
             <div class="container">
@@ -272,27 +301,26 @@
                   <div class="col-lg-2 col-md-6 col-sm-6">
                      <h3>Menús</h3>
                      <ul class="link_icon">
-                        <li class="active"> <a href="index.html"> Inicio</a></li>
+                        <li> <a href="index.html"> Inicio</a></li>
                         <li>
                            <a href="nosotros.html">
                               </i>Nosotros
                         </li>
-                        <li> <a href="servicios.html"> </i>Servicios</a></li>
-                        <li><a href="cursos.html">Cursos</a></li>
+                        <li></i><p>Servicios</p></li>
+                        <li><p>Cursos</p></li>
                         <li> <a href="blog.html"></i>Blog</a></li>
                      </ul>
                   </div>
                   <div class="col-lg-4 col-md-6 col-sm-6">
                      <h3>Nuestros Horarios</h3>
                      <ul class="link_icon">
-                        <li> <a href="#"> Lunes a Viernes: </a></li>
+                        <li> <p>Lunes a Viernes</p></li>
                         <li>
-                           <a href="#">
-                              9:00 a.m. - 6:00 p.m.
+                           <p>9:00 a.m. - 6:00 p.m.</p>
                         </li>
                         <li> <a href="#">  </a></li>
-                        <li> <a href="#"> Fines de Semana</a></li>
-                        <li> <a href="#"> 10 a.m. - 4 p.m</a></li>
+                        <li> <p>Fines de Semana</p></li>
+                        <li> <p>10 a.m. - 4 p.m</p></li>
                      </ul>
                   </div>
                </div>
@@ -308,13 +336,28 @@
             </div>
          </div>
       </footer>
-
+      <script>
+         // Verificar si el usuario ya ha aceptado o denegado las cookies
+         if (localStorage.getItem('cookieConsent') === 'accepted' || localStorage.getItem('cookieConsent') === 'declined') {
+                document.getElementById('cookie-consent').style.display = 'none';
+            }
+       
+            document.getElementById('accept-cookies').addEventListener('click', function() {
+                localStorage.setItem('cookieConsent', 'accepted');
+                document.getElementById('cookie-consent').style.display = 'none';
+            });
+       
+            document.getElementById('decline-cookies').addEventListener('click', function() {
+                localStorage.setItem('cookieConsent', 'declined');
+                window.location.href = 'index.html';
+            });
+       </script>
+      <script src="./js/script.js"></script>
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>
       <script src="js/jquery-3.0.0.min.js"></script>
       <script src="js/owl.carousel.min.js"></script>
-      
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
    </body>
