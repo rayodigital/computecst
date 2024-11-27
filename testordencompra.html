@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen de Compra</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <!-- <button id="scroll-to-top" class="btn btn-primary">
+        ↑
+      </button> -->
+        
+</body>
+    <div class="container mt-5">
+        <h1>Resumen de Compra</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Descripción</th>
+                    <th>Cantidad</th>
+                    <th>Precio Unitario</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody id="summary-table-body">
+                <!-- Los productos se cargarán dinámicamente -->
+            </tbody>
+        </table>
+        <h3>Total: $<span id="summary-total">0</span></h3>
+        <button class="btn btn-success" onclick="finalizePurchase()">Finalizar Compra</button>
+        <button class="btn btn-danger" onclick="clearCart()">Vaciar Carrito</button>
+    </div>
+    <script>
+        function loadSummary() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const tableBody = document.getElementById('summary-table-body');
+            const totalElement = document.getElementById('summary-total');
+            let total = 0;
+
+            tableBody.innerHTML = cart.map(item => {
+                const subtotal = (item.price * item.quantity).toFixed(2);
+                total += parseFloat(subtotal);
+                return `
+                    <tr>
+                        <td>${item.name}</td>
+                        <td>${item.description}</td>
+                        <td>${item.quantity}</td>
+                        <td>$${item.price}</td>
+                        <td>$${subtotal}</td>
+                    </tr>
+                `;
+            }).join('');
+            totalElement.textContent = total.toFixed(2);
+        }
+
+        function finalizePurchase() {
+            alert('Gracias por su compra. Procesaremos su pedido pronto.');
+            localStorage.removeItem('cart');
+            window.location.href = 'index.html';
+        }
+
+        function clearCart() {
+            localStorage.removeItem('cart');
+            window.location.href = 'index.html';
+        }
+
+        // Cargar el resumen al iniciar la página
+        loadSummary();
+    </script>
+    <script>
+        // Muestra el botón cuando el usuario hace scroll hacia abajo
+        window.addEventListener("scroll", function () {
+          const scrollTopButton = document.getElementById("scroll-to-top");
+          if (window.scrollY > 200) {
+            scrollTopButton.style.display = "block";
+          } else {
+            scrollTopButton.style.display = "none";
+          }
+        });
+      
+        // Desplazamiento suave y rápido
+        document.getElementById("scroll-to-top").addEventListener("click", function () {
+          const startTime = Date.now();
+          const duration = 1000; // Duración total en ms
+          const initialScroll = window.scrollY;
+      
+          function scrollStep() {
+            const elapsedTime = Date.now() - startTime;
+            const progress = Math.min(elapsedTime / duration, 1); // Progreso entre 0 y 1
+            const speedFactor = progress < 0.7 ? progress * progress : 1; // Suave al inicio y rápida al final
+            const scrollTo = initialScroll * (1 - speedFactor);
+      
+            window.scrollTo(0, scrollTo);
+      
+            if (progress < 1) {
+              requestAnimationFrame(scrollStep);
+            }
+          }
+      
+          requestAnimationFrame(scrollStep);
+        });
+      </script>
+</body>
+</html>
