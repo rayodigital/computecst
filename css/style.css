@@ -1681,4 +1681,11 @@ ul.img_icon li {
    #scroll-to-top:hover {
      background-color: #0056b3;
    }
-   
+  
+
+   .card-cover {
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+   }
+ 
